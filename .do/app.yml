@@ -1,8 +1,9 @@
-name: sample-python
-services:
-- environment_slug: php
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: SWADESNA/Button-Python
+spec:
   name: sample-python
+  services:
+    - name: sample-python
+      git:
+        branch: main
+        repo_clone_url: https://github.com/SWADESNA/Button-Python.git
+    databases:
+    - name: example-db
