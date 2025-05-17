@@ -1,9 +1,10 @@
 spec:
   name: sample-python
   services:
-    - name: sample-python
-      git:
-        branch: main
-        repo_clone_url: https://github.com/SWADESNA/Button-Python.git
-    databases:
-    - name: example-db
+  - environment_slug: python
+    git:
+      branch: main
+      repo_clone_url: https://github.com/SWADESNA/Button-Python.git
+    name: sample-python
+
+
