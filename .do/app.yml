@@ -1,6 +1,6 @@
 name: sample-python
 services:
-- environment_slug: python
+- environment_slug: php
   github:
     branch: main
     deploy_on_push: true
